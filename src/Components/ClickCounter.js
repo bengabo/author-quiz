@@ -17,13 +17,14 @@ export default class ClickCounter extends Component {
       <button onClick={() => {
         if (this.state.clicks) {
           this.setState({clicks: this.state.clicks - 1})
-        } else {
-
         }
       }}>-</button>
       <button onClick={() => {
         this.setState({clicks: this.state.clicks + 1});
       }}>+</button>
+      <button onClick={() => {
+        this.setState({clicks: 0});
+      }}>reset</button>
     </>
     )
   }
