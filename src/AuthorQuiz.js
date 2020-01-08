@@ -3,11 +3,13 @@ import React from 'react';
 import './App.css';
 import './bootstrap.min.css';
 import Sum from './Components/Sum';
+import ClickCounter from './Components/ClickCounter';
 
 function AuthorQuiz() {
   return (
     <>
-      <Sum a={1} b={5} /> 
+      <ClickCounter />
+      <Sum a={"key"} b={"board"} /> 
       <p>Author Quiz</p>
     </>
   );
